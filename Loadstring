@@ -1,1 +1,18 @@
-loadstring
+if not game:IsLoaded() then
+	game.Loaded:Wait()
+end
+getgenv().OriginalHost = "S_arah018Ninja" --The permanent master host
+getgenv().Alts = {
+    "CrystalLion28680",
+    "AltAccount2",
+    "AltAccount3",
+    "AltAccount4"
+} 
+
+getgenv().Hosts = {getgenv().OriginalHost} 
+getgenv().HostsCanAdmin = false --Other host can give admin
+getgenv().AltFPSLimit = 50 
+getgenv().Prefix = "." 
+
+--YouTube GS21
+loadstring(game:HttpGet("https://raw.githubusercontent.com/GS21Official/DaHoodAltCtrl2026/refs/heads/main/Source"))()
